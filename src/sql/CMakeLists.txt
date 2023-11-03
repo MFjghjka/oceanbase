@@ -445,6 +445,7 @@ ob_set_subtarget(ob_sql engine_expr
   engine/expr/ob_expr_obj_access.cpp
   engine/expr/ob_expr_object_construct.cpp
   engine/expr/ob_expr_obversion.cpp
+  engine/expr/ob_expr_hello.cpp
   engine/expr/ob_expr_ols_funcs.cpp
   engine/expr/ob_expr_operator.cpp
   engine/expr/ob_expr_operator_factory.cpp
