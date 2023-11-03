@@ -20,7 +20,7 @@ namespace sql
 {
 
 ObExprHello::ObExprHello(ObIAllocator &alloc)
-  : ObStringExprOperator(alloc, T_HELLO, "hello", 0, NOT_VALID_FOR_GENERATED_COL)
+  : ObStringExprOperator(alloc, T_FUN_SYS_HELLO, N_HELLO, 0, NOT_VALID_FOR_GENERATED_COL)
 {
 }
 

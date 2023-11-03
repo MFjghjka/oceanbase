@@ -2272,7 +2272,7 @@ typedef enum ObItemType
   T_KV_ATTRIBUTES,
   T_VALUES_TABLE_EXPRESSION,//used to values statement
   T_VALUES_ROW_LIST,//used to values statement
-  T_HELLO,
+  T_FUN_SYS_HELLO,
   T_MAX //Attention: add a new type before T_MAX
 } ObItemType;
 
