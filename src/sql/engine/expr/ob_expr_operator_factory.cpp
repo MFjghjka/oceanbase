@@ -271,6 +271,7 @@
 #include "sql/engine/expr/ob_expr_multiset.h"
 #include "sql/engine/expr/ob_expr_stmt_id.h"
 #include "sql/engine/expr/ob_expr_obversion.h"
+#include "sql/engine/expr/ob_expr_hello.h"
 #include "sql/engine/expr/ob_expr_utl_i18n.h"
 #include "sql/engine/expr/ob_expr_dbms_crypto.h"
 #include "sql/engine/expr/ob_expr_remove_const.h"
@@ -999,6 +1000,7 @@ void ObExprOperatorFactory::register_expr_operators()
     REG_OP(ObExprRandstr);
     REG_OP(ObExprPrefixPattern);
     REG_OP(ObExprAlignDate4Cmp);
+    REG_OP(ObExprHello);
   }();
 // 注册oracle系统函数
   REG_OP_ORCL(ObExprSysConnectByPath);

@@ -120,7 +120,8 @@ public:
   inline bool is_basic_const_expr_mysql() const { return EXPR_CONST == expr_class_
                                                     || T_FUN_SYS_VERSION == type_
                                                     || T_FUN_SYS_OB_VERSION == type_
-                                                    || T_FUN_SYS_ICU_VERSION == type_; }
+                                                    || T_FUN_SYS_ICU_VERSION == type_
+                                                    || T_HELLO == type_; }
 
   inline bool is_pl_expr() const { return EXPR_UDF == expr_class_
                                           || T_FUN_PL_COLLECTION_CONSTRUCT == type_

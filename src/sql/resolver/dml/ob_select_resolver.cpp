@@ -2067,7 +2067,11 @@ int ObSelectResolver::resolve_field_list(const ParseNode &node)
             if (OB_FAIL(ob_write_string(*allocator_, common::ObString(PACKAGE_VERSION), select_item.alias_name_))) {
               LOG_WARN("failed to ob write string", K(ret));
             }
-          } else if (T_FUN_SYS_ICU_VERSION == name_expr->get_expr_type()) {
+          } else if (T_HELLO == name_expr->get_expr_type()) {
+            if (OB_FAIL(ob_write_string(*allocator_, common::ObString("Hello, OceanBase Competition!"), select_item.alias_name_))) {
+              LOG_WARN("failed to ob write string", K(ret));
+            }
+          }else if (T_FUN_SYS_ICU_VERSION == name_expr->get_expr_type()) {
             if (OB_FAIL(ob_write_string(*allocator_,
                                         common::ObString(ObExprRegexContext::icu_version_string()),
                                         select_item.alias_name_))) {

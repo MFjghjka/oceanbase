@@ -214,6 +214,7 @@
 #include "ob_expr_returning_lob.h"
 #include "ob_expr_set.h"
 #include "ob_expr_obversion.h"
+#include "ob_expr_hello.h"
 #include "ob_expr_ols_funcs.h"
 #include "ob_expr_plsql_variable.h"
 #include "ob_expr_degrees.h"
@@ -1038,6 +1039,7 @@ static ObExpr::EvalFunc g_expr_eval_functions[] = {
   ObExprCurrentScn::eval_current_scn,                                 /* 606 */
   ObExprTempTableSSID::calc_temp_table_ssid,                          /* 607 */
   ObExprAlignDate4Cmp::eval_align_date4cmp,                            /* 608 */
+  ObExprHello::eval_hello,
 };
 
 static ObExpr::EvalBatchFunc g_expr_eval_batch_functions[] = {
