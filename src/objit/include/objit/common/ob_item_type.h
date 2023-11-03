@@ -494,6 +494,7 @@ typedef enum ObItemType
   T_FUN_SYS_ICU_VERSION = 765,
 
   T_FUN_SYS_CURRENT_USER_PRIV = 766,
+  T_FUN_SYS_HELLO=767,
   ///< @note add new mysql only function type before this line
   T_MYSQL_ONLY_SYS_MAX_OP = 800,
 
@@ -2272,7 +2273,6 @@ typedef enum ObItemType
   T_KV_ATTRIBUTES,
   T_VALUES_TABLE_EXPRESSION,//used to values statement
   T_VALUES_ROW_LIST,//used to values statement
-  T_FUN_SYS_HELLO,
   T_MAX //Attention: add a new type before T_MAX
 } ObItemType;
 
